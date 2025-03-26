@@ -30,57 +30,41 @@ or the following steps can be carried out manually.
 
 
 # Step 1: Update and install system packages
-```bash
 sudo apt-get update && \
 sudo apt-get install -y \
   python3 python3-pip python3-tk python3-numpy python3-matplotlib \
   python3-paramiko python3-pigpio pigpio i2c-tools \
   libqt5waylandclient5 libqt5waylandcompositor5 \
   qtwayland5 xwayland
-```
 
 # Step 2: Install virtualenv
-```bash
 sudo pip3 install virtualenv
-```
 
 # Step 3: Create a virtual environment
-```bash
 virtualenv -p $PYTHON_VERSION $VENV_DIR
-```
 
 # Step 4: Activate the virtual environment
-```bash
 source $VENV_DIR/bin/activate
-```
 
 # Step 5: Install Python modules from PyPI inside the virtual environment
-```bash
 pip install --upgrade pip
 pip install \
     adafruit-blinka \
     adafruit-circuitpython-busdevice \
     adafruit-circuitpython-bme280 \
     ttkbootstrap
-```
 
 # Step 6: Force reinstall specific packages (if needed)
-```bash
 pip install --upgrade --force-reinstall \
     adafruit-circuitpython-bme280 \
     adafruit-circuitpython-busdevice \
     adafruit-blinka
-```
 
 # Step 7: Deactivate the virtual environment
-```bash
 deactivate
-```
 
 # Step 8: Reboot the system
-```bash
 sudo reboot
-```
 
 
 
@@ -104,24 +88,18 @@ Alternatively, the manual installation can be done using the following steps.
 
 
 # Step 1: Update and install system packages
-```bash
 sudo apt-get update && \
 sudo apt-get install -y \
   python3 python3-pip python3-tk pigpio
-```
 
 # Step 2: Install Python modules globally
-```bash
 sudo pip3 install --upgrade pip
 sudo pip3 install \
     ttkbootstrap \
     paramiko \
     matplotlib \
     numpy
-```
 
 # Step 3: Reboot the system
-```bash
 sudo reboot
-```
 

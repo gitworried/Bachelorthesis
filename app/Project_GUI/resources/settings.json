@@ -1,0 +1,9 @@
+{
+    "save_data": false,
+    "hostname": "Eiffel.local",
+    "username": "Eiffel",
+    "password": "Kanal",
+    "save_directory": "/home/userkiste/Documents/Project_GUI/plots",
+    "save_filename": "sensor_data.md",
+    "pwm_frequency": 100000
+}
